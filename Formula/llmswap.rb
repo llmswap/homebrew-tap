@@ -1,7 +1,7 @@
 class Llmswap < Formula
   desc "Universal AI CLI with multi-provider support, teaching features, and cost optimization"
   homepage "https://github.com/sreenathmmenon/llmswap"
-  url "https://files.pythonhosted.org/packages/source/l/llmswap/llmswap-5.0.0.tar.gz"
+  url "https://files.pythonhosted.org/packages/source/l/llmswap/llmswap-5.0.1.tar.gz"
   sha256 "c0bd878c3fdd4d486d4796111d8ef5e43d09038612af761d35c35ef717a70807"
   license "MIT"
   version "5.0.1"
