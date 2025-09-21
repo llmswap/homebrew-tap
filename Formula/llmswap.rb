@@ -69,7 +69,7 @@ class Llmswap < Formula
 
   test do
     # Test version
-    assert_match "5.0.0", shell_output("#{bin}/llmswap --version")
+    assert_match "5.0.1", shell_output("#{bin}/llmswap --version")
     
     # Test help command
     help_output = shell_output("#{bin}/llmswap --help")
