@@ -1,4 +1,6 @@
 class Llmswap < Formula
+  include Language::Python::Virtualenv
+
   desc "Universal AI CLI with multi-provider support, teaching features, and cost optimization"
   homepage "https://github.com/sreenathmmenon/llmswap"
   url "https://files.pythonhosted.org/packages/source/l/llmswap/llmswap-5.0.1.tar.gz"
@@ -9,9 +11,7 @@ class Llmswap < Formula
   depends_on "python@3.11"
 
   def install
-    virtualenv_create(libexec, Formula["python@3.11"].opt_bin/"python3")
-    system libexec/"bin/pip", "install", buildpath
-    bin.install_symlink libexec/"bin/llmswap"
+    virtualenv_install_with_resources
   end
 
   test do
