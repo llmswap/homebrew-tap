@@ -3,10 +3,10 @@ class Llmswap < Formula
 
   desc "Universal AI CLI with multi-provider support, teaching features, and cost optimization"
   homepage "https://github.com/sreenathmmenon/llmswap"
-  url "https://files.pythonhosted.org/packages/source/l/llmswap/llmswap-5.0.1.tar.gz"
-  sha256 "c0bd878c3fdd4d486d4796111d8ef5e43d09038612af761d35c35ef717a70807"
+  url "https://files.pythonhosted.org/packages/source/l/llmswap/llmswap-5.0.2.tar.gz"
+  sha256 "1a3574c88bb2a91b0aea0f56c0a688986f7b862b13f07248b1182d23be8f3aa4"
   license "MIT"
-  version "5.0.1"
+  version "5.0.2"
 
   depends_on "python@3.11"
 
@@ -16,7 +16,7 @@ class Llmswap < Formula
 
   test do
     # Test version
-    assert_match "5.0.1", shell_output("#{bin}/llmswap --version")
+    assert_match "5.0.2", shell_output("#{bin}/llmswap --version")
     
     # Test help command
     help_output = shell_output("#{bin}/llmswap --help")
