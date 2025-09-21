@@ -10,7 +10,7 @@ class Llmswap < Formula
 
   resource "anthropic" do
     url "https://files.pythonhosted.org/packages/source/a/anthropic/anthropic-0.34.2.tar.gz"
-    sha256 "efb3c533199d4a0ead3e4a19b4f3b2495fe8b1c5c9e47fbca073a4a4fe3b58f2"
+    sha256 "808ea19276f26646bfde9ee535669735519376e4eeb301a2974fc69892be1d6e"
   end
 
   resource "openai" do
