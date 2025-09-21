@@ -9,7 +9,9 @@ class Llmswap < Formula
   depends_on "python@3.11"
 
   def install
-    virtualenv_install_with_resources
+    virtualenv_create(libexec, "python3.11")
+    system libexec/"bin/pip", "install", buildpath
+    bin.install_symlink libexec/"bin/llmswap"
   end
 
   test do
