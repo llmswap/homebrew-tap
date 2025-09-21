@@ -15,7 +15,7 @@ class Llmswap < Formula
 
   resource "openai" do
     url "https://files.pythonhosted.org/packages/source/o/openai/openai-1.52.2.tar.gz"
-    sha256 "87e3d0cc6841cf41e7064e911c17b74cad8c7fd6bea1b7ca7b72c967d2e6c32e"
+    sha256 "87b7d0f69d85f5641678d414b7ee3082363647a5c66a462ed7f3ccb59582da0d"
   end
 
   resource "google-generativeai" do
