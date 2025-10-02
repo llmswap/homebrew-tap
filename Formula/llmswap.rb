@@ -1,12 +1,12 @@
 class Llmswap < Formula
   include Language::Python::Virtualenv
 
-  desc "Universal AI CLI with multi-provider support, teaching features, and cost optimization"
+  desc "cURL for LLMs - Universal AI SDK + CLI with multiple second brains and workspace memory"
   homepage "https://github.com/sreenathmmenon/llmswap"
-  url "https://files.pythonhosted.org/packages/source/l/llmswap/llmswap-5.0.3.tar.gz"
-  sha256 "132045bdf5b659608bec03495b1e96b1bce2e141a718d90e55d154c208e04552"
+  url "https://files.pythonhosted.org/packages/source/l/llmswap/llmswap-5.1.0.tar.gz"
+  sha256 "a2acdaa43395182cf41754a97103324415936d92cf0daab59a6761d2ed395690"
   license "MIT"
-  version "5.0.3"
+  version "5.1.0"
 
   depends_on "python@3.11"
 
@@ -16,7 +16,7 @@ class Llmswap < Formula
 
   test do
     # Test version
-    assert_match "5.0.3", shell_output("#{bin}/llmswap --version")
+    assert_match "5.1.0", shell_output("#{bin}/llmswap --version")
     
     # Test help command
     help_output = shell_output("#{bin}/llmswap --help")
