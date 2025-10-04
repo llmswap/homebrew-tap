@@ -3,10 +3,10 @@ class Llmswap < Formula
 
   desc "cURL for LLMs - Universal AI SDK + CLI with multiple second brains and workspace memory"
   homepage "https://github.com/sreenathmmenon/llmswap"
-  url "https://files.pythonhosted.org/packages/source/l/llmswap/llmswap-5.1.0.tar.gz"
-  sha256 "ff6ee09076c0d8d54614669e71b1d8984c39629a5e4d3b1b21ffc2697e279999"
+  url "https://files.pythonhosted.org/packages/source/l/llmswap/llmswap-5.1.4.tar.gz"
+  sha256 "909cee04582b1fb10c53d0b738cb76645c95ee7f3722d874f6e7e6d8a86338c9"
   license "MIT"
-  version "5.1.0"
+  version "5.1.4"
 
   depends_on "python@3.11"
 
@@ -16,7 +16,7 @@ class Llmswap < Formula
 
   test do
     # Test version
-    assert_match "5.1.0", shell_output("#{bin}/llmswap --version")
+    assert_match "5.1.4", shell_output("#{bin}/llmswap --version")
     
     # Test help command
     help_output = shell_output("#{bin}/llmswap --help")
