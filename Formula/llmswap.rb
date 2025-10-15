@@ -20,8 +20,8 @@ class Llmswap < Formula
     
     # Test help command
     help_output = shell_output("#{bin}/llmswap --help")
-    assert_match "Universal AI CLI", help_output
-    assert_match "conversational", help_output
+    assert_match "Universal LLM CLI", help_output
+    assert_match "Available commands", help_output
     
     # Test config functionality (should work without API keys)
     config_output = shell_output("#{bin}/llmswap config show 2>&1", 0)
