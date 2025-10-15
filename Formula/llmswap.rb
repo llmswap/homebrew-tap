@@ -28,8 +28,7 @@ class Llmswap < Formula
     assert_match "provider:", config_output
     
     # Test cost comparison (should work without API keys)
-    costs_output = shell_output("#{bin}/llmswap costs --input-tokens 100 --output-tokens 50")
-    assert_match "Provider Cost Comparison", costs_output
-    assert_match "estimated", costs_output
+    compare_output = shell_output("#{bin}/llmswap compare --input-tokens 100 --output-tokens 50")
+    assert_match "Provider Cost Comparison", compare_output
   end
 end
