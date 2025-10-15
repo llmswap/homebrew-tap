@@ -12,9 +12,6 @@ class Llmswap < Formula
 
   def install
     virtualenv_install_with_resources using: "python@3.11"
-
-    # Install all extras to include web features and all providers
-    system libexec/"bin/pip", "install", "flask>=3.0.0", "flask-cors>=4.0.0", "ibm-watsonx-ai>=0.0.5"
   end
 
   test do
